@@ -1,7 +1,7 @@
 
 package ie.lyit.hotel;
 
-public class Hotel{
+public class Room{
 	private String MaxAdults;			
 	private String MaxKids;					
 	private String PricePerNight;
@@ -10,7 +10,7 @@ public class Hotel{
 	private double price;
 
 	
-	public Hotel(){
+	public Room(){
 		MaxAdults=MaxKids=PricePerNight="";
 		date = new Date();
 		time = new Time();
@@ -18,7 +18,7 @@ public class Hotel{
 	}
   				   
 
-	public Hotel(String MaxAdults, String MaxKids, String PricePerNight, Date date, Time time, double price){
+	public Room(String MaxAdults, String MaxKids, String PricePerNight, Date date, Time time, double price){
 
 		this.MaxAdults=MaxAdults;
 		this.MaxKids=MaxKids;
@@ -30,14 +30,14 @@ public class Hotel{
 				
 
 	public String toString(){
-		return "HOTEL " + MaxAdults + " ==> "+MaxKids+" to "+PricePerNight+" " + date+" "+time";"
+		return "Room " + MaxAdults + " ==> "+MaxKids+" to "+PricePerNight+" " + date+" "+time",";
 	}
 					
 
    public boolean equals(Object obj){
-	    Hotel fObject;
-	   	if (obj instanceof Hotel)
-	   		fObject = (Hotel)obj;
+	    Room fObject;
+	   	if (obj instanceof Room)
+	   		fObject = (Room)obj;
 	   	else
 	   		return false;
 
